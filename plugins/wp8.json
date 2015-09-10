@@ -1,0 +1,29 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"StatusBar\"><param name=\"wp-package\" value=\"StatusBar\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "{54860c60-5766-11e5-a969-93b7f91cb9a4}"
+        },
+        "org.apache.cordova.statusbar": {
+            "PACKAGE_NAME": "{54860c60-5766-11e5-a969-93b7f91cb9a4}"
+        }
+    },
+    "dependent_plugins": {}
+}

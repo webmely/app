@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" href="css/index.css"/>
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+        <style type="text/css">
+            #form{display: none;}
+            .received{display: none;}
+        </style>
+        <script src="js/jquery-1.11.3.min.js"></script> 
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script src="js/bootstrap.js"></script> 
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        <title>Hello world</title>
+    </head>
+    <body>    
+
+<div id="deviceready">
+    <div class="event listening">
+        <img src="img/sotay.jpg" class="img-responsive"/>
+    </div>
+    <div class="event received">
+    <div class="">
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/" id="home">HOME</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="exampleInputAmount" placeholder="Search">
+                  <div class="input-group-addon"><i class="fa fa-search"></i></div>
+                </div>
+              </div>
+          </form>
+          <ul class="nav navbar-nav">
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bài Viết <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="post.html">Đăng bài</a></li>
+                <li><a href="camera.html">Sổ tay của tôi</a></li>
+              </ul>
+            </li>
+          </ul> 
+          <span id="loadmenuuser"></span>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+        <div class="container">
+                <div id="loadcontent">
+            <div class="list-group">
+                <a href="post.html" class="list-group-item">Đăng bài</a>
+                <a href="camera.html" class="list-group-item">Bài viết</a>
+            </div>
+                </div> 
+        </div>
+    <!-- /content -->
+</div>
+
+<!--footer-->
+<div id='bttop'>TOP</div>
+<div id='dangbai'>VIẾT BÀI</div>
+
+<!--endfoot-->
+</div>
+</div>
+
+
+</body>
+</html>

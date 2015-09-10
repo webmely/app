@@ -1,0 +1,29 @@
+<script type="text/javascript">
+$("document").ready(function() {
+	$("a").on("click",function(e) {
+            var addressValue = $(this).attr("href");
+            e.preventDefault();
+            $("#loadcontent").load(addressValue);
+        })
+	if (localStorage.email) {
+		$(".hidelogin").css("display","none");
+		$("#username").html(localStorage.email);
+	}
+	else {
+		$(".showlogin").css("display","none");
+	}
+
+	$("#logout").on("click",function() {
+		var a = confirm("Bạn chắc chắn muốn thoát?");
+		if(a == true) {
+		localStorage.removeItem("email");
+		$("#loadmenuuser").load("loadmenuuser.html");
+		$("#loadcontent").load("login.html");}
+	})
+})
+</script>
+<ul class="nav navbar-nav">
+<li class="hidelogin"><a href="reg.html">Đăng ký</a></li>
+<li class="hidelogin"><a href="login.html">Đăng nhập</a></li>
+<li class="showlogin"><a href="exit.html" id="logout"><span id="username"></span> | Đăng xuất</a></li>
+</ul>

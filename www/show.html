@@ -1,0 +1,28 @@
+<div data-role="page" id="showPage">
+    <div data-role="header" data-position="fixed">
+        <h1 id="ndhead"></h1>
+    </div>
+    <div data-role="content"> 
+        <ul id="nd" data-split-icon="delete">
+        </ul>
+        <br/>
+        <form id="editNoteForm" method="post">
+            <input type="hidden" name="noteId" id="noteId" value="">
+            <div data-role="fieldcontain">
+                <label for="noteTitle">Title</label>
+                <input type="text" name="noteTitle" id="name">
+            </div>
+            <div data-role="fieldcontain">
+                <label for="noteBody">Detail</label>
+                <textarea name="noteBody" id="mota"></textarea>
+            </div>
+            <div data-role="fieldcontain">
+                <button type="submit" id="editb">Sửa</button>
+            </div>
+        </form>
+    </div>
+
+    <div data-role="footer" class="ui-bar"  data-position="fixed">
+        <a href="index.html" data-role="button" data-icon="home"  data-rel="back">Return Home</a>
+    </div>
+</div>

@@ -1,28 +1,29 @@
-<script type="text/javascript" src="js/camera.js">
-</script>
-<div class="container">
-<div class="panel panel-primary">
-  <div class="panel-heading">Đăng bài</div>
-  <div class="panel-body">
-    <ul class="list-group">
-        <li id="newPicLink" class="list-group-item"><i class="fa fa-camera fa-2x"></i> Chụp ảnh</li>
-        <li id="existingPicLink" class="list-group-item"><i class="fa fa-file-image-o fa-2x"></i> Chọn từ thư viện</li>
-    </ul>
-    <div id="status"></div>
-    <img id="camImg" class="img-circle" width="100px" height="100px"/>
-    <div id="form">
-    <form>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Tiêu đề</label>
-            <input type="email" class="form-control" id="name" placeholder="Tiêu đề"/>
-          </div>
-        <div class="form-group">
-            <label for="exampleInputEmail1">Mô tả</label>
-            <textarea id="mota" class="form-control" ></textarea>
-          </div>
-    <button id="submit" class="btn btn-primary">Thêm</button>
-    </form>
-</div>
-</div>
-</div>
+<div data-role="page" id="postPage">
+    <div data-role="header" data-position="fixed">
+        <a href="index.html" data-icon="home" data-iconpos="notext" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
+        <h1>Đăng bài</h1>
+    </div>
+    <div data-role="content"> 
+        <div id="form">
+        <form id="editNoteForm" method="post">
+            <input type="hidden" name="noteId" id="noteId" value="">
+            <div data-role="fieldcontain">
+                <label for="noteTitle">Title</label>
+                <input type="text" name="noteTitle" id="name">
+            </div>
+            <div data-role="fieldcontain">
+                <label for="noteBody">Detail</label>
+                <textarea name="noteBody" id="mota"></textarea>
+            </div>
+        </form>
+        </div>
+        <div id="status"></div>
+        <img id="camImg" class="img-circle" width="60px" height="60px"/>
+        <button id="newPicLink" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-camera">Chụp ảnh</button>
+        <button id="existingPicLink" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-grid">Chọn từ thư viện</button>
+    </div>
+
+    <div data-role="footer" data-position="fixed">
+        <a href="#" id="submitt" data-role="button" data-icon="check">Đăng bài</a>
+    </div>
 </div>
